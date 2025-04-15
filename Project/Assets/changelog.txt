@@ -1,0 +1,2 @@
+-Added an image and a light to TV
+-The flashlight can be turned off with Q.
