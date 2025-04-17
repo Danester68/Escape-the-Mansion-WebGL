@@ -1,2 +1,3 @@
 -Added an image and a light to TV
 -The flashlight can be turned off with Q.
+-More decor has been added.
