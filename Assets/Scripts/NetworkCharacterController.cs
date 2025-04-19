@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class NetworkCharacterController : NetworkBehaviour
 {
 
     public float speed = 10.0f;
@@ -21,6 +21,7 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!IsOwner) return;
         // Input.GetAxis() is used to get the user's input
         // You can furthor set it on Unity. (Edit, Project Settings, Input)
         translation = Input.GetAxis("Vertical") * speed * Time.deltaTime;
