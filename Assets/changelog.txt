@@ -1,2 +1,3 @@
--Added an image and a light to TV
--The flashlight can be turned off with Q.
+-Added extra decor.
+-Added lights that can be turned on and off.
+-Made player flashlight stronger.

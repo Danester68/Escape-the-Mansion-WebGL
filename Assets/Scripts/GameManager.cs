@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public GameObject finishUI;
 
     private bool isFinished;
+
+    public LightScript lightScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,9 @@ public class GameManager : MonoBehaviour
                 break;
             case "FinishObject":
                 finishGame();
+                break;
+            case "LightSwitch1" or "LightSwitch2":
+                lightScript.ToggleLight(collision.gameObject.tag);
                 break;
         }
     }
