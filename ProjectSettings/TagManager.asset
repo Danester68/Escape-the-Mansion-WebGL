@@ -9,6 +9,8 @@ TagManager:
   - FinishObject
   - LightSwitch1
   - LightSwitch2
+  - DefaultPlayer
+  - NetworkGameManager
   layers:
   - Default
   - TransparentFX
