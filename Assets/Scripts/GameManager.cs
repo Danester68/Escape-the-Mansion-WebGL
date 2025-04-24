@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     private bool isFinished;
 
     public LightScript lightScript;
+
+    public String nextLevelName;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,7 @@ public class GameManager : MonoBehaviour
     {
         if (isFinished && Input.GetKeyDown(KeyCode.Return)) 
         {
-            SceneManager.LoadSceneAsync("Game");
+            SceneManager.LoadSceneAsync(nextLevelName);
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
