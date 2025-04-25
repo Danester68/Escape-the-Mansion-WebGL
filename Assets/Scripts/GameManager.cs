@@ -31,11 +31,13 @@ public class GameManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadSceneAsync("Menu");
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         switch (collision.gameObject.tag)
         {
@@ -52,7 +54,6 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-
     void finishGame()
     {
         isFinished = true;
