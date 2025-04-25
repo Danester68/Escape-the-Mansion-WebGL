@@ -1,9 +1,9 @@
 # Escape the Mansion
 The Escape the Mansion! game.<br/>
-Version: v1.2.
+Version: v2.0.
 <a href="changelog.txt">View changelog</a>
 # About game
-In Escape the Mansion!, you need to escape a house (thus the title). To escape, you need to collect a key and unlock the balcony door.
+In Escape the Mansion!, you need to escape a house (thus the title) and more.
 # Controls
 Use your mouse to move the camera, WASD to move the player, and Esc to return to the menu while in-game. To collect an item, touch it.
 # External links
