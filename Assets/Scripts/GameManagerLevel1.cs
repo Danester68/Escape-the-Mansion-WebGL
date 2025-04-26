@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManagerLevel1 : MonoBehaviour
 {
     public GameObject key;
     public GameObject door;

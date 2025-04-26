@@ -9,6 +9,7 @@ TagManager:
   - FinishObject
   - LightSwitch1
   - LightSwitch2
+  - LightSwitch3
   layers:
   - Default
   - TransparentFX
