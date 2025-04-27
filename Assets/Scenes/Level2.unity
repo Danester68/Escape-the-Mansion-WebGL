@@ -506,9 +506,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65eb1bac56c0d5142a08917129eeaa19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  door: {fileID: 1319420036}
   finishUI: {fileID: 1858566230}
   lightScript: {fileID: 9167589051681057388}
   nextLevelName: Menu
+--- !u!1 &1319420036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1131247972371633730, guid: f7b81f02229a386489a8dbb48c3bce46,
+    type: 3}
+  m_PrefabInstance: {fileID: 9167589051681057386}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1523785747
 GameObject:
   m_ObjectHideFlags: 0

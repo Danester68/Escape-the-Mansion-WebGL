@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerLevel2 : MonoBehaviour
 {
+    public GameObject door;
     public GameObject finishUI;
 
     private bool isFinished;
@@ -24,6 +25,8 @@ public class GameManagerLevel2 : MonoBehaviour
     {
         if (isFinished && Input.GetKeyDown(KeyCode.Return)) 
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadSceneAsync(nextLevelName);
         }
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -38,6 +41,10 @@ public class GameManagerLevel2 : MonoBehaviour
     {
         switch (collision.gameObject.tag)
         {
+            case "Button":
+                Debug.Log("Touched button");
+                Destroy(door);
+                break;
             case "FinishObject":
                 finishGame();
                 break;

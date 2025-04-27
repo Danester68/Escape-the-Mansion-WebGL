@@ -8,7 +8,6 @@ public class GameManagerLevel1 : MonoBehaviour
 {
     public GameObject key;
     public GameObject door;
-    public GameObject finishObject;
     public GameObject finishUI;
 
     private bool isFinished;

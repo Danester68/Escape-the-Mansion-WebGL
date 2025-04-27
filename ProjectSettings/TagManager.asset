@@ -10,6 +10,7 @@ TagManager:
   - LightSwitch1
   - LightSwitch2
   - LightSwitch3
+  - Button
   layers:
   - Default
   - TransparentFX
