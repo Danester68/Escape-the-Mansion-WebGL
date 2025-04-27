@@ -1,3 +1,2 @@
--Added extra decor.
--Added lights that can be turned on and off.
--Made player flashlight stronger.
+-Added new FPS controller.
+-Added a second level and a dropdown menu.

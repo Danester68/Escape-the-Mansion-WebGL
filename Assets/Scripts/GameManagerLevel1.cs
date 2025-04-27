@@ -4,16 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManagerLevel1 : MonoBehaviour
 {
     public GameObject key;
     public GameObject door;
-    public GameObject finishObject;
     public GameObject finishUI;
 
     private bool isFinished;
 
     public LightScript lightScript;
+
+    public String nextLevelName;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,15 +26,17 @@ public class GameManager : MonoBehaviour
     {
         if (isFinished && Input.GetKeyDown(KeyCode.Return)) 
         {
-            SceneManager.LoadSceneAsync("Game");
+            SceneManager.LoadSceneAsync(nextLevelName);
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             SceneManager.LoadSceneAsync("Menu");
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         switch (collision.gameObject.tag)
         {
@@ -50,7 +53,6 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-
     void finishGame()
     {
         isFinished = true;
