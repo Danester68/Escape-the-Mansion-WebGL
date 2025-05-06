@@ -5,7 +5,7 @@ Version: v2.0.
 # About game
 In Escape the Mansion!, you need to escape a house (thus the title) and more.
 # Controls
-Use your mouse to move the camera, WASD to move the player, and Esc to return to the menu while in-game. To collect an item, touch it.
+Use your mouse to move the camera, WASD to move the player, and Esc to return to the menu while in-game. To collect or interact with an object, touch it.
 # External links
 itch page: <a href="https://tgcdev.itch.io/escape-the-mansion">tgcdev.itch.io/escape-the-mansion</a>.<br/>
 Google Sites page: <a href="https://sites.google.com/view/tgcdev/games/escape-the-mansion">https://sites.google.com/view/tgcdev/games/escape-the-mansion</a>
